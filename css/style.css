@@ -661,3 +661,75 @@ nav .search img{
     -ms-border-radius: 50px 0px 50px 0px;
     -o-border-radius: 50px 0px 50px 0px;
 }
+
+.ramadan-sales{
+    padding: 20px 10px;
+}
+.ramadan-sales .headers{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto 30px auto;
+}
+.ramadan-sales .headers a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+    background-color: #364B70;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.ramadan-sales .headers p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+}
+.ramadan-sales .headers p span{
+    color: #B92728;
+}
+.ramadan-sales .row{
+    padding: 0px 20px 30px 20px;
+}
+.ramadan-sales .row .col{
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .ramadan-sales .row .col {width: 50%;}
+}
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 1079px) {
+        .ramadan-sales .row .col {width: calc(100% / 3);}
+    }
+}
+@media screen and (min-width: 1080px) {
+    .ramadan-sales .row .col {width: 20%;}
+}
+.ramadan-sales .row .col div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ramadan-sales .row .col img{
+    width: 100%;
+}
+.ramadan-sales .row .col p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #364B70;
+}
+
+.sales2{
+    padding: 16px 32px;
+}
+.sales2 .col div .text{
+    padding: 16px;
+}

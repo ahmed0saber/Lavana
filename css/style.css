@@ -229,10 +229,14 @@ nav .search img{
     padding: 16px;
 }
 .sales .col > div{
-    border-radius: 20px;
     display: flex;
     background: #B92728;
     padding: 8px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .sales .col > div .text{
     display: flex;
@@ -298,9 +302,13 @@ nav .search img{
     display: flex;
     align-items: center;
     background: #364B70;
-    border-radius: 50px 0px;
     padding: 12px 60px;
     flex-wrap: wrap;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
 }
 .countdown .title p{
     font-weight: 700;
@@ -333,11 +341,15 @@ nav .search img{
 .just-text div{
     background: #FFFFFF;
     border: 2px dashed #B92728;
-    border-radius: 50px;
     padding: 5px;
     width: 90%;
     max-width: 1200px;
     margin: 32px auto;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 .just-text div p{
     font-weight: 700;
@@ -345,19 +357,23 @@ nav .search img{
     line-height: 46px;
     color: #FFFFFF;
     background: #B92728;
-    border-radius: 50px;
     padding: 16px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .today-sales{
     background: #FFF6F2;
-    padding: 10px;
+    padding: 20px 10px;
 }
 .today-sales .headers{
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto 30px auto;
 }
 .today-sales .headers a{
     font-weight: 500;
@@ -366,9 +382,13 @@ nav .search img{
     font-feature-settings: 'salt' on, 'liga' off;
     color: #FFFFFF;
     background-color: #B92728;
-    border-radius: 20px;
     padding: 8px 12px;
     cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .today-sales .headers p{
     font-weight: 700;
@@ -447,5 +467,84 @@ nav .search img{
     color: #FFFFFF;
     padding: 6px 12px;
     background-color: #B92728;
-    border-radius: 50px 0px;
+    cursor: pointer;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
+}
+
+.sales-24h .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #364B70;
+    padding: 8px 60px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
+}
+.sales-24h .title p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: right;
+    margin: 0 0 0 8px;
+}
+.sales-24h .row{
+    padding: 0px 20px 30px 20px;
+}
+.sales-24h .row .col{
+    padding: 10px;
+}
+@media screen and (max-width: 600px) {
+    .sales-24h .row .col {width: 50%;}
+}
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 1079px) {
+        .sales-24h .row .col {width: calc(100% / 3);}
+    }
+}
+@media screen and (min-width: 1080px) {
+    .sales-24h .row .col {width: 20%;}
+}
+.sales-24h .row .col > div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.sales-24h .row .col > div img{
+    width: 100%;
+}
+.sales-24h .row .col > div div{
+    border: 1px solid #C4C4C4;
+    border-radius: 0px 0px 50px 0;
+    -webkit-border-radius: 0px 0px 50px 0;
+    -moz-border-radius: 0px 0px 50px 0;
+    -ms-border-radius: 0px 0px 50px 0;
+    -o-border-radius: 0px 0px 50px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 0 14px 0;
+
+}
+.sales-24h .row .col > div div p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #364B70;
+    padding: 8px 4px 0 4px;
+}
+.sales-24h .row .col > div div span{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #B92728;
+    padding: 4px;
 }

@@ -1,0 +1,130 @@
+nav{
+    padding: 4px 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+nav .badge{
+    width: 120px;
+    margin: 0 2px;
+}
+nav select{
+    direction: rtl;
+    border: none;
+    margin: 0 4px 0 0;
+    background-color: #0000;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #212529;
+}
+nav select:nth-of-type(1){
+    margin: 0 0 0 28px;
+}
+nav .flag{
+    padding: 0 10px 0 0;
+    margin: 0 0 0 -8px;
+}
+nav .logo{
+    width: 56px;
+}
+nav .search{
+    width: 54%;
+}
+nav .search input{
+    width: 100%;
+    height: 48px;
+    direction: rtl;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 8px 24px;
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08);
+    border: none;
+    outline: none;
+}
+nav .search input::placeholder{
+    font-family: 'Cairo';
+    font-size: 16px;
+    line-height: 24px;
+    color: #a6a6a6;
+}
+nav .search img{
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.second-nav{
+    background: #B92728;
+    box-shadow: 0px 1px 0px #E5E9F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 16px;
+    align-items: center;
+}
+.second-nav .items{
+    display: flex;
+}
+.second-nav .items .item{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 12px;
+    margin: 0 4px;
+    color: #fff;
+}
+.second-nav .items .item img{
+    height: 20px;
+}
+.second-nav .items .item p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    margin: 2px 0 0 0;
+}
+.second-nav .tabs{
+    display: flex;
+}
+.second-nav .tabs .tab{
+    display: flex;
+    color: #fff;
+    padding: 10px 16px;
+    margin: 0 4px;
+}
+.second-nav .tabs span{
+    height: 44px;
+    width: 2px;
+    background-color: #c4c4c4;
+    margin: 0 6px 0 0;
+}
+.second-nav .tabs .menu{
+    background-color: #0000;
+    border: none;
+    direction: rtl;
+    padding: 6px 18px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.ads{
+    background-color: #364B70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ads span{
+    font-family: 'Cairo';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    color: #fff;
+    letter-spacing: 1.5px;
+}
+.ads img{
+    margin: 0 18px;
+}

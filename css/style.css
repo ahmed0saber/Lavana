@@ -128,3 +128,123 @@ nav .search img{
 .ads img{
     margin: 0 18px;
 }
+
+.banner > img{
+    width: 100%;
+}
+.banner :is(.right, .left){
+    position: absolute;
+    top: 44.8%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.banner .left{
+    left: 22px;
+}
+.banner .right{
+    right: 22px;
+}
+.banner .tabs{
+    display: flex;
+    position: absolute;
+    top: calc(100% - 24px);
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+}
+.banner .tabs div{
+    width: 9px;
+    height: 9px;
+    background: #323232;
+    opacity: 0.6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.banner .tabs div.active{
+    background: #B92728;
+    opacity: 1;
+    width: 18px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.categories{
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.categories div{
+    padding: 10px;
+    text-align: center;
+}
+.categories div img{
+    width: 100%;
+}
+.categories div p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212529;
+}
+
+.sales{
+    background: rgba(121, 136, 151, 0.1);
+    padding: 16px 10px;
+    margin: 40px 0;
+    display: flex;
+    align-items: flex-start;
+}
+.sales .col{
+    padding: 16px;
+}
+.sales .col > div{
+    border-radius: 20px;
+    display: flex;
+    background: #B92728;
+    padding: 8px;
+}
+.sales .col > div .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding: 2px;
+}
+.sales .col > div .text p{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+}
+.sales .col > div .text span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    color: #fff;
+    margin: 22px 0;
+}

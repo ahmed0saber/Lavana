@@ -120,17 +120,19 @@ nav .search img{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .ads span{
     font-family: 'Cairo';
     font-weight: 700;
     font-size: 36px;
-    line-height: 24px;
+    line-height: 48px;
     color: #fff;
     letter-spacing: 1.5px;
+    margin: 8px;
 }
 .ads img{
-    margin: 0 18px;
+    margin: 0 10px;
 }
 
 .banner > img{
@@ -264,6 +266,7 @@ nav .search img{
 }
 .countdown .timer{
     display: flex;
+    flex-wrap: wrap;
 }
 .countdown .timer > span{
     margin: 0 12px 0 8px;
@@ -297,6 +300,7 @@ nav .search img{
     background: #364B70;
     border-radius: 50px 0px;
     padding: 12px 60px;
+    flex-wrap: wrap;
 }
 .countdown .title p{
     font-weight: 700;
@@ -343,4 +347,105 @@ nav .search img{
     background: #B92728;
     border-radius: 50px;
     padding: 16px;
+}
+
+.today-sales{
+    background: #FFF6F2;
+    padding: 10px;
+}
+.today-sales .headers{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 30px auto;
+}
+.today-sales .headers a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+    background-color: #B92728;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.today-sales .headers p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #323232;
+}
+.today-sales .headers p span{
+    color: #B92728;
+}
+.today-sales .row .col{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.today-sales .row .col > img{
+    width: 100%;
+}
+.today-sales .row .col > div{
+    background-color: #fff;
+    border: 1px solid #E5E9F2;
+    padding: 10px 20px;
+    text-align: right;
+}
+.today-sales .row .col > div > p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #212529;
+}
+.today-sales .row .col > div .rating{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+}
+.today-sales .row .col > div .rating .stars{
+    display: flex;
+    align-items: center;
+}
+.today-sales .row .col > div .rating .stars span{
+    font-size: 12px;
+    line-height: 16px;
+    color: #515151;
+    margin: 0 10px;
+}
+.today-sales .row .col > div .rating .text{
+    font-size: 12px;
+    line-height: 16px;
+    color: #515151;
+}
+.today-sales .row .col > div .card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 6px 0;
+}
+.today-sales .row .col > div .card-footer p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #B92728;
+}
+.today-sales .row .col > div .card-footer span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #323232;
+    margin: 0 20px 0 0;
+}
+.today-sales .row .col > div .card-footer a{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    background-color: #B92728;
+    border-radius: 50px 0px;
 }

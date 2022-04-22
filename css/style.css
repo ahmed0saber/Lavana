@@ -785,3 +785,17 @@ nav .search img{
     background-color: #0000;
     margin: 20px 5px;
 }
+
+.sale40{
+    margin: -60px 0 10px 0;
+}
+.sale40 .row .col > div{
+    border: 1px solid #c4c4c4;
+}
+.sale40 .row .col > div p{
+    padding: 20px;
+    font-weight: 700;
+    font-size: 25.2141px;
+    line-height: 30px;
+    color: #000000;
+}

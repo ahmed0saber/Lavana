@@ -791,6 +791,7 @@ nav .search img{
 }
 .sale40 .row .col > div{
     border: 1px solid #c4c4c4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 .sale40 .row .col > div p{
     padding: 20px;
@@ -798,4 +799,59 @@ nav .search img{
     font-size: 25.2141px;
     line-height: 30px;
     color: #000000;
+}
+
+.red-section{
+    background-color: #B92728;
+    margin: 0;
+}
+.red-section .headers a{
+    background-color: #fff;
+    color: #B92728;
+}
+.red-section .headers p{
+    font-size: 40px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.red-section-info{
+    width: 90%;
+    margin: 20px auto 30px auto;
+    text-align: right;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.red-section .row .col{
+    width: 11%;
+}
+@media screen and (max-width: 600px) {
+    .red-section .row .col {width: calc(100% / 3);}
+}
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 1079px) {
+        .red-section .row .col {width: calc(100% / 5);}
+    }
+}
+@media screen and (min-width: 1080px) {
+    .red-section .row .col {width: calc(100% / 9);}
+}
+.red-section .row .col > div{
+    border: none;
+    box-shadow: none;
+}
+.red-section .row .col > div > div{
+    border: 2px dashed #fff;
+    padding: 4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.red-section .row .col > div p{
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 8px 2px;
 }

@@ -733,3 +733,50 @@ nav .search img{
 .sales2 .col div .text{
     padding: 16px;
 }
+
+.women-sales{
+    padding: 0px 20px;
+}
+.women-sales .row{
+    padding: 0px 20px 30px 20px;
+}
+.women-sales .row .col{
+    padding: 10px;
+}
+.women-sales .row .col div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.women-sales .row .col img{
+    width: 100%;
+}
+.women-sales .row .col p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #364B70;
+}
+.women-sales .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B92728;
+    padding: 8px 60px;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 50px 0px 50px 0px;
+    -webkit-border-radius: 50px 0px 50px 0px;
+    -moz-border-radius: 50px 0px 50px 0px;
+    -ms-border-radius: 50px 0px 50px 0px;
+    -o-border-radius: 50px 0px 50px 0px;
+}
+.women-sales .title p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: right;
+    margin: 0 0 0 8px;
+}

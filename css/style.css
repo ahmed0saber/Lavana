@@ -889,3 +889,13 @@ nav .search img{
 .house-sales .col > div > div{
     background-color: #fff;
 }
+
+.electronics{
+    background-color: #0000;
+}
+.electronics .headers a{
+    background-color: #B92728;
+}
+.electronics .headers .title{
+    background-color: #B92728;
+}

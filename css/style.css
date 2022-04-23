@@ -855,3 +855,37 @@ nav .search img{
     color: #FFFFFF;
     padding: 8px 2px;
 }
+
+.house-sales{
+    background: rgba(54, 75, 112, 0.1);
+    padding: 20px 0;
+}
+.house-sales .headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: calc(100% - 120px);
+}
+.house-sales .headers .title{
+    margin: 0;
+}
+.house-sales .headers a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+    background-color: #364B70;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.house-sales .col > div > div{
+    background-color: #fff;
+}

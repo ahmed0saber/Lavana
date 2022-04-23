@@ -899,3 +899,51 @@ nav .search img{
 .electronics .headers .title{
     background-color: #B92728;
 }
+
+.best-brands .row{
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.best-brands .row .col img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-banner{
+    background: url("../images/footer/Group 300.svg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 44px 8px;
+}
+.footer-banner .col > div:not(.text){
+    text-align: center;
+}
+.footer-banner .col > div:not(.text) img{
+    margin: 10px 0 0 0;
+}
+.footer-banner .col > div:not(.text) p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    margin: 0 0 10px 0;
+}
+.footer-banner .col > div:not(.text) p:nth-of-type(2){
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0 0 20px 0;
+}
+.footer-banner .col > div.text{
+    text-align: right;
+    padding: 4px 26px 4px 4px;
+}
+.footer-banner .col > div.text p{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+}
+.footer-banner .col > div.text p:nth-of-type(2){
+    padding: 0 26px 0 0;
+}

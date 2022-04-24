@@ -1,0 +1,58 @@
+.toggler{
+    display: none;
+}
+.toggler button{
+    width: 50px;
+    height: 40px;
+    font-size: 22px;
+    color: #B92728;
+    background-color: #fff;
+    border: 2px solid #B92728;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.toggler button:active{
+    color: #fff;
+    background-color: #B92728;
+    border: 2px solid #B92728;
+}
+
+@media screen and (max-width: 1225px) {
+    body{
+        padding: 77px 0 0 0;
+    }
+    .mobile-nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        order: 1;
+    }
+    .badge-btns{
+        width: 100%;
+    }
+    nav{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .toggler{
+        display: block;
+    }
+    nav > select:nth-of-type(1){
+        margin: 20px 0 0 20px;
+    }
+    .toggleable{
+        padding: 0;
+        margin: 20px 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        display: none;
+    }
+    .second-nav{
+        justify-content: center;
+        padding: 10px 4px;
+    }
+}

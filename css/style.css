@@ -1,3 +1,6 @@
+body{
+    padding: 71px 0 0 0;
+}
 nav{
     padding: 4px 34px;
     display: flex;
@@ -5,9 +8,20 @@ nav{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 1px 0px #E5E9F2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: #fff;
 }
-nav .badge{
-    width: 120px;
+nav .badge-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .badge-btn{
+    width: 116px;
     margin: 0 2px;
 }
 nav select{
@@ -24,15 +38,21 @@ nav select{
 nav select:nth-of-type(1){
     margin: 0 0 0 28px;
 }
+nav .country{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 nav .flag{
     padding: 0 10px 0 0;
-    margin: 0 0 0 -8px;
+    margin: 0 0 0 4px;
 }
 nav .logo{
     width: 56px;
 }
 nav .search{
-    width: 54%;
+    max-width: 590px;
+    width: 96%;
 }
 nav .search input{
     width: 100%;
@@ -92,6 +112,7 @@ nav .search img{
 .second-nav .tabs{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .second-nav .tabs .tab{
     display: flex;
@@ -121,12 +142,13 @@ nav .search img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    direction: rtl;
 }
 .ads span{
     font-family: 'Cairo';
     font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 34px;
+    line-height: 54px;
     color: #fff;
     letter-spacing: 1.5px;
     margin: 8px;
@@ -900,6 +922,10 @@ nav .search img{
     background-color: #B92728;
 }
 
+.best-brands{
+    background: rgba(185, 39, 40, 0.1);
+    padding: 10px 0;
+}
 .best-brands .row{
     justify-content: center;
     width: 80%;
@@ -946,4 +972,70 @@ nav .search img{
 }
 .footer-banner .col > div.text p:nth-of-type(2){
     padding: 0 26px 0 0;
+}
+
+.footer-contact{
+    text-align: right;
+    background: rgba(185, 39, 40, 0.1);
+    padding: 8px 58px 32px 58px;
+}
+.footer-contact .row{
+    align-items: flex-start;
+}
+.footer-contact .icons{
+    width: fit-content;
+    margin: 10px 20px;
+    float: right;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.footer-contact .icons i{
+    background-color: #e3e3e3;
+    color: #212121;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.footer-contact p{
+    font-size: 18px;
+    line-height: 28px;
+    margin: 8px 0;
+    color: #000000;
+    font-weight: 600;
+}
+.footer-contact .col > div:not(.text) p:nth-of-type(1){
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #B92728;
+    margin: 20px 0 30px 0;
+}
+
+footer{
+    background-color: #B92728;
+    color: #FFFFFF;
+    padding: 20px 10px;
+    text-align: center;
+    direction: rtl;
+    font-size: 22px;
+}
+
+.badge{
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 100px !important;
+    z-index: 1;
 }

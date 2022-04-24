@@ -11,25 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
-<body>
+<body onresize="check_screen()">
     <nav>
-        <img class="badge" src="./images/nav/Google Play Badge.svg"/>
-        <img class="badge" src="./images/nav/App Store Badge.svg"/>
-        <select>
+        <div class="badge-btns">
+            <img class="badge-btn toggleable" src="./images/nav/Google Play Badge.svg"/>
+            <img class="badge-btn toggleable" src="./images/nav/App Store Badge.svg"/>
+        </div>
+        <select class="toggleable">
             <option>عربى</option>
             <option>En</option>
         </select>
-        <div class="search">
+        <div class="search toggleable">
             <input type="text" placeholder="عن ماذا تبحث؟"/>
             <img src="./images/nav/search.svg"/>
         </div>
-        <select>
-            <option>تسليم ل جدة</option>
-            <option>En</option>
-        </select>
-        <img class="flag" src="./images/nav/SA.svg"/>
-        <img class="logo" src="./images/nav/logo (1) 2.png"/>
+        <div class="country">
+            <select class="toggleable">
+                <option>تسليم ل جدة</option>
+                <option>En</option>
+            </select>
+            <img class="flag toggleable" src="./images/nav/SA.svg"/>
+        </div>
+        
+        <div class="mobile-nav">
+            <div class="toggler">
+                <button onclick="toggle()" class="nav-toggler fa fa-bars"></button>
+            </div>
+            <img class="logo" src="./images/nav/logo (1) 2.png"/>
+        </div>
     </nav>
 
     <div class="second-nav">
@@ -70,17 +82,17 @@
 
     <div class="banner">
         <img src="./images/ads/ar_banner-01 (1) 1.png"/>
-        <div class="left">
+        <div class="left" onclick="slideLeft()">
             <img src="./images/ads/arrow-left.svg"/>
         </div>
-        <div class="right">
+        <div class="right" onclick="slideRight()">
             <img src="./images/ads/arrow-right.svg"/>
         </div>
         <div class="tabs">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div class="active"></div>
+            <div class="slider-tab"></div>
+            <div class="slider-tab"></div>
+            <div class="slider-tab"></div>
+            <div class="slider-tab active"></div>
         </div>
     </div>
 
@@ -136,7 +148,7 @@
     </div>
 
     <div class="sales row">
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales/Rectangle 726.png"/>
                 <div class="text">
@@ -145,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales/Rectangle 728.png"/>
                 <div class="text">
@@ -154,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales/Rectangle 726.png"/>
                 <div class="text">
@@ -163,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales/Rectangle 728.png"/>
                 <div class="text">
@@ -230,7 +242,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -263,7 +276,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -296,7 +310,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -329,7 +344,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -373,7 +389,7 @@
             </p>
         </div>
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sales-24h/Rectangle 736.png"/>
                     <div>
@@ -388,7 +404,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sales-24h/Rectangle 736.png"/>
                     <div>
@@ -403,7 +419,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sales-24h/Rectangle 736.png"/>
                     <div>
@@ -418,7 +434,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sales-24h/Rectangle 736.png"/>
                     <div>
@@ -433,7 +449,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sales-24h/Rectangle 736.png"/>
                     <div>
@@ -459,7 +475,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -492,7 +509,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -525,7 +543,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -558,7 +577,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -591,7 +611,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -624,7 +645,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -668,7 +690,7 @@
             </p>
         </div>
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/ramadan-sales/Vector 27.png"/>
                     <p>
@@ -676,7 +698,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/ramadan-sales/Vector 27.png"/>
                     <p>
@@ -684,7 +706,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/ramadan-sales/Vector 27.png"/>
                     <p>
@@ -692,7 +714,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/ramadan-sales/Vector 27.png"/>
                     <p>
@@ -700,7 +722,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/ramadan-sales/Vector 27.png"/>
                     <p>
@@ -712,7 +734,7 @@
     </div>
 
     <div class="sales sales2 row">
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales2/Group 294.png"/>
                 <div class="text">
@@ -723,7 +745,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales2/Group 287.png"/>
                 <div class="text">
@@ -734,7 +756,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-4 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-12">
             <div>
                 <img src="./images/sales2/Group 293.png"/>
                 <div class="text">
@@ -755,7 +777,7 @@
             </p>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
                     <p>
@@ -763,7 +785,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -771,7 +793,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
                     <p>
@@ -779,7 +801,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
                     <p>
@@ -798,7 +820,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -831,7 +854,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -864,7 +888,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -897,7 +922,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -930,7 +956,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -963,7 +990,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -1011,7 +1039,7 @@
     </div>
     <div class="ramadan-sales sale40">
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1019,7 +1047,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1027,7 +1055,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1035,7 +1063,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1043,7 +1071,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1172,7 +1200,7 @@
             </p>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
                     <p>
@@ -1180,7 +1208,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1188,7 +1216,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
                     <p>
@@ -1196,7 +1224,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
                     <p>
@@ -1215,7 +1243,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1248,7 +1277,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1281,7 +1311,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1314,7 +1345,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1347,7 +1379,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -1380,7 +1413,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -1428,7 +1462,7 @@
     </div>
     <div class="ramadan-sales sale40">
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1436,7 +1470,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1444,7 +1478,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1452,7 +1486,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1460,7 +1494,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
                     <p>
@@ -1482,7 +1516,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
                     <div>
@@ -1497,7 +1531,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
                     <div>
@@ -1512,7 +1546,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
                     <div>
@@ -1527,7 +1561,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
                     <div>
@@ -1542,7 +1576,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
                     <div>
@@ -1568,7 +1602,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1601,7 +1636,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1634,7 +1670,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1667,7 +1704,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1700,7 +1738,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -1733,7 +1772,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -1777,7 +1817,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1810,7 +1851,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1843,7 +1885,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <p>
@@ -1876,7 +1919,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <p>
@@ -1909,7 +1953,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <p>
@@ -1942,7 +1987,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <p>
@@ -1979,7 +2025,7 @@
     </div>
 
     <div class="sales sales2 row">
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/last-sales/Rectangle 726.png"/>
                 <div class="text">
@@ -1990,7 +2036,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-3 col-md-6 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
             <div>
                 <img src="./images/last-sales/Rectangle 728.png"/>
                 <div class="text">
@@ -2001,7 +2047,7 @@
                 </div>
             </div>
         </div>
-        <div class="col col-lg-6 col-md-12 col-sm-12">
+        <div data-aos="fade-right" class="col col-lg-6 col-md-12 col-sm-12">
             <div>
                 <img src="./images/last-sales/Rectangle 762.png"/>
                 <div class="text">
@@ -2025,7 +2071,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2040,7 +2086,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2055,7 +2101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2070,7 +2116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2085,7 +2131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2112,7 +2158,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2145,7 +2192,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2178,7 +2226,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2211,7 +2260,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2244,7 +2294,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2277,7 +2328,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <p>
@@ -2322,7 +2374,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2355,7 +2408,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2388,7 +2442,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2421,7 +2476,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2454,7 +2510,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2487,7 +2544,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <p>
@@ -2538,7 +2596,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2553,7 +2611,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2568,7 +2626,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2583,7 +2641,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2598,7 +2656,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
                 <div>
                     <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
                     <div>
@@ -2625,7 +2683,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2658,7 +2717,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2691,7 +2751,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2724,7 +2785,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2757,7 +2819,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2790,7 +2853,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <p>
@@ -2835,7 +2899,8 @@
             </p>
         </div>
         <div class="row">
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -2868,7 +2933,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -2901,7 +2967,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -2934,7 +3001,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -2967,7 +3035,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -3000,7 +3069,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-2 col-md-4 col-sm-6">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-4 col-sm-6">
+                <img class="badge" src="./images/badge/Group 296.svg"/>
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <p>
@@ -3044,27 +3114,27 @@
             </p>
         </div>
         <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/brands/1280px-H&M-Logo 1.png"/>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 col">
+            <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
                     <img src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
                 </div>
@@ -3074,28 +3144,28 @@
 
     <div class="footer-banner">
         <div class="row">
-            <div class="col col-lg-2 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-2 col-md-6 col-sm-12">
                 <div>
                     <img src="./images/footer/Phone.svg"/>
                     <p>عبر الهاتف</p>
                     <p>050000000</p>
                 </div>
             </div>
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <img src="./images/footer/Mail.svg"/>
                     <p>البريد الالكترونى</p>
                     <p>support@lavana.com</p>
                 </div>
             </div>
-            <div class="col col-lg-3 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <img src="./images/footer/Smile.svg"/>
                     <p>مركز المساعدة</p>
                     <p>help.lavana.com</p>
                 </div>
             </div>
-            <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div data-aos="fade-right" class="col col-lg-4 col-md-6 col-sm-12">
                 <div class="text">
                     <p>
                         نحن دائما جاهزون لمساعدتك
@@ -3108,5 +3178,81 @@
         </div>
     </div>
 
+    <div class="footer-contact">
+        <div class="row">
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>تواصل معنا</p>
+                    <p>الرياض . المملكة العربية السعودية</p>
+                    <p>اتصل بنا الان
+                        04700000
+                    </p>
+                    <p>راسلنا الان
+                        Support@Taswaq.com
+                    </p>
+                    <p>فاكس
+                        : 23232
+                    </p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>حسابى</p>
+                    <p>صفحتك الشخصية</p>
+                    <p>عربة التسوق</p>
+                    <p>تتبع طلبيتك</p>
+                    <p>اعدادات الدفع الالكترونى</p>
+                    <p>اسالة و اجوبة</p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div>
+                    <p>من نحن</p>
+                    <p>تعرف علينا</p>
+                    <p>تواصل معنا</p>
+                    <p>الشروط و الاحكام</p>
+                    <p>سياسة الارجاع و التبديل</p>
+                    <p>معلومات الشحن و الارسال</p>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-sm-12">
+                <div class="text">
+                    <img src="./images/nav/logo (1) 2.png"/>
+                    <p>
+                        افضل متجر عربى
+                    </p>
+                    <p>
+                        نقدم افضل المنتجات باعلى جودة
+                    </p>
+                    <div class="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-google"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-spotify"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة
+        2022
+        &copy;
+        صنع ب
+        &hearts;	
+        بواسطة
+        Monaya
+    </footer>
+
 </body>
+<script src="https://kit.fontawesome.com/282bcf757e.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+    duration: 1000
+    });
+</script>
+<script src="./script.js"></script>
 </html>

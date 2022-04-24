@@ -2,7 +2,7 @@ body{
     padding: 71px 0 0 0;
 }
 nav{
-    padding: 4px 34px;
+    padding: 4px 27px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,7 +22,7 @@ nav .badge-btns{
 }
 nav .badge-btn{
     width: 116px;
-    margin: 0 2px;
+    margin: 0 7px;
 }
 nav select{
     direction: rtl;
@@ -671,7 +671,7 @@ nav .search img{
 }
 .electronics-sales .row .col > div .card-footer a{
     font-weight: 700;
-    font-size: 9.1136px;
+    font-size: 10px;
     line-height: 14px;
     color: #FFFFFF;
     padding: 4px 8px;
@@ -682,6 +682,7 @@ nav .search img{
     -moz-border-radius: 50px 0px 50px 0px;
     -ms-border-radius: 50px 0px 50px 0px;
     -o-border-radius: 50px 0px 50px 0px;
+    text-align: center;
 }
 
 .ramadan-sales{
@@ -752,8 +753,14 @@ nav .search img{
 .sales2{
     padding: 16px 32px;
 }
+.sales2 .col div{
+    justify-content: space-between;
+}
 .sales2 .col div .text{
-    padding: 16px;
+    padding: 4px 6px;
+}
+.sales2 .col div .text p{
+    font-size: 18px;
 }
 
 .women-sales{
@@ -1038,4 +1045,137 @@ footer{
     left: 8px;
     width: 100px !important;
     z-index: 1;
+}
+
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+.options span{
+    height: 60px;
+    width: 2px;
+    background-color: #51515151;
+}
+.row .col:hover .options{
+    opacity: 1;
+}
+
+.help{
+    width: fit-content;
+    position: fixed;
+    bottom: 14px;
+    right: 20px;
+    z-index: 1;
+}
+.help img{
+    width: 100px;
+}
+
+.banner .slides{
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+.banner .slides:not(.active){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu p, .menu div{
+    padding: 4px 4px 4px 0;
+    width: 144px;
+}
+.menu > i{
+    margin: 0 8px;
+}
+.menu > div{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    z-index: 1;
+}
+.menu:hover div:not(.subMenu, .subMenu2){
+    display: block;
+}
+.subMenu{
+    display: none;
+}
+.menu2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu2 > i{
+    margin: 0 8px;
+}
+.menu2 > div{
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 140px;
+    background-color: #fff;
+    z-index: 1;
+}
+.menu2:hover div:not(.subMenu2){
+    display: block;
+}
+.subMenu2{
+    display: none;
+}
+.menu3{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu3 > i{
+    margin: 0 8px;
+}
+.menu3 > div{
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 136px;
+    background-color: #fff;
+    z-index: 1;
+}
+.menu3:hover div{
+    display: block;
+}
+
+.zoom-in, .zoom-out{
+    transition-duration: 0.4s;
+}
+.zoom-in:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.zoom-out:hover{
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
 }

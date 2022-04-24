@@ -32,8 +32,9 @@ const check_screen = () =>{
     }
 }
 
-tabs = document.getElementsByClassName("slider-tab")
-let slide = 3
+let tabs = document.getElementsByClassName("slider-tab")
+let slides = document.getElementsByClassName("slides")
+let slide = 0
 const slideRight = () => {
     if(slide<3){
         slide++
@@ -53,6 +54,46 @@ const slideLeft = () => {
 const changeSlider = () => {
     for(let i = 0; i < tabs.length; i++){
         tabs[i].classList.remove("active")
+        slides[i].style.opacity = 0
     }
     tabs[slide].classList.add("active")
+    setTimeout(() => {
+        slides[slide].style.opacity = 1
+    }, 200)
+}
+changeSlider()
+
+let daysTimer = document.getElementById("days")
+let hoursTimer = document.getElementById("hours")
+let minutesTimer = document.getElementById("minutes")
+let secondsTimer = document.getElementById("seconds")
+let days = 2, hours = 12, minutes = 3, seconds = 15
+const myTimeout = setInterval(() => {
+    if(seconds > 0){
+        seconds--
+    }else{
+        seconds = 60
+        if(minutes > 0){
+            minutes--
+        }else{
+            minutes = 60
+            if(hours > 0){
+                hours--
+            }else{
+                hours = 60
+                if(days > 0){
+                    days--
+                }else{
+                    clearInterval(myTimeout)
+                }
+            }
+        }
+    }
+    updateTimer()
+}, 1000)
+const updateTimer = () => {
+    daysTimer.textContent = days
+    hoursTimer.textContent = hours
+    minutesTimer.textContent = minutes
+    secondsTimer.textContent = seconds
 }

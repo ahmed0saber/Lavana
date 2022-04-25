@@ -18,50 +18,22 @@ const toggle = () => {
         open = true
     }
 }
+
 const check_screen = () =>{
     if(window.innerWidth >= 1226){
         for(let i = 0; i < nav_content.length; i++) {
             nav_content[i].style.display = "block"
         }
-    }else{
+    }else if(window.innerWidth >= 701){
         if(!open){
             for(let i = 0; i < nav_content.length; i++) {
                 nav_content[i].style.display = "none"
             }
         }
-    }
-}
-
-let tabs = document.getElementsByClassName("slider-tab")
-let slides = document.getElementsByClassName("slides")
-let slide = 0
-const slideRight = () => {
-    if(slide<3){
-        slide++
     }else{
-        slide = 0
+        document.getElementsByClassName("search")[0].style.display = "block"
     }
-    changeSlider()
 }
-const slideLeft = () => {
-    if(slide>0){
-        slide--
-    }else{
-        slide = 3
-    }
-    changeSlider()
-}
-const changeSlider = () => {
-    for(let i = 0; i < tabs.length; i++){
-        tabs[i].classList.remove("active")
-        slides[i].style.opacity = 0
-    }
-    tabs[slide].classList.add("active")
-    setTimeout(() => {
-        slides[slide].style.opacity = 1
-    }, 200)
-}
-changeSlider()
 
 let daysTimer = document.getElementById("days")
 let hoursTimer = document.getElementById("hours")
@@ -97,3 +69,25 @@ const updateTimer = () => {
     minutesTimer.textContent = minutes
     secondsTimer.textContent = seconds
 }
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+})

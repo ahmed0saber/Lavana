@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body onresize="check_screen()">
     <nav>
@@ -30,7 +31,7 @@
         </div>
         <div class="country">
             <select class="toggleable">
-                <option>تسليم ل جدة</option>
+                <option>تسليم لـ جدة</option>
                 <option>En</option>
             </select>
             <img class="flag toggleable" src="./images/nav/SA.svg"/>
@@ -46,25 +47,31 @@
     <div class="second-nav">
         <div class="items">
             <div class="item">
-                <img src="./images/second-nav/cart.svg"/>
-                <p>عربة التسوق</p>
+                <a href="#">
+                    <img src="./images/second-nav/cart.svg"/>
+                    <p>عربة التسوق</p>
+                </a>
             </div>
             <div class="item">
-                <img src="./images/second-nav/fav.svg"/>
-                <p>المفضلة</p>
+                <a href="#">
+                    <img src="./images/second-nav/fav.svg"/>
+                    <p>المفضلة</p>
+                </a>
             </div>
             <div class="item">
-                <img src="./images/second-nav/user.svg"/>
-                <p>تسجيل الدخول</p>
+                <a href="#">
+                    <img src="./images/second-nav/user.svg"/>
+                    <p>تسجيل الدخول</p>
+                </a>
             </div>
         </div>
         <div class="tabs">
-            <a class="tab">كن بائعا معنا</a>
-            <a class="tab">اجهزة منزلية</a>
-            <a class="tab">اطفال</a>
-            <a class="tab">ملابس نسائية</a>
-            <a class="tab">ملابس رجالية</a>
-            <a class="tab">الالكترونيات</a>
+            <a class="tab" href="#">كن بائعا معنا</a>
+            <a class="tab" href="#">اجهزة منزلية</a>
+            <a class="tab" href="#">اطفال</a>
+            <a class="tab" href="#">ملابس نسائية</a>
+            <a class="tab" href="#">ملابس رجالية</a>
+            <a class="tab" href="#">الالكترونيات</a>
             <span></span>
             <a class="menu">
                 تسوق حسب الاقسام
@@ -99,79 +106,104 @@
         </div>
     </div>
 
-    <div class="ads">
-        <span>رمضان كريم</span>
-        <img src="./images/ads/ramadan 25 1.png"/>
-        <span>إغتنم تخفضيات  20%  بمناسبة شهر رمضان</span>
+    <div class="banner" style="margin: 0 0 -6px 0;">
+        <img src="./images/banner/Group 186.png"/>
     </div>
 
-    <div class="banner">
-        <img class="slides active" src="./images/ads/ar_banner-01 (1) 1.png"/>
-        <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
-        <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
-        <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
-        <div class="left" onclick="slideLeft()">
-            <img src="./images/ads/arrow-left.svg"/>
-        </div>
-        <div class="right" onclick="slideRight()">
-            <img src="./images/ads/arrow-right.svg"/>
-        </div>
-        <div class="tabs">
-            <div class="slider-tab active"></div>
-            <div class="slider-tab"></div>
-            <div class="slider-tab"></div>
-            <div class="slider-tab"></div>
+    <div class="banner slideshow">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide3">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+                <div class="swiper-slide slide4">
+                    <img class="slides" src="./images/ads/ar_banner-01 (1) 1.png"/>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
 
     <div class="categories row">
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
-            <p>ادوات تجميل</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
+                <p>ادوات تجميل</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
-            <p>ملابس نسائية</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
+                <p>ملابس نسائية</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
-            <p>ملابس رجالية</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
+                <p>ملابس رجالية</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
-            <p>العاب</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
+                <p>العاب</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
-            <p>ادوات تجميل</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_FoeIOgztCXo.png"/>
+                <p>ادوات تجميل</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
-            <p>ملابس نسائية</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_GLg0z5z8EQU.png"/>
+                <p>ملابس نسائية</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
-            <p>ملابس رجالية</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_kLIZQ8iUdzA.png"/>
+                <p>ملابس رجالية</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
-            <p>العاب</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_PeX3e51pHIE.png"/>
+                <p>العاب</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_iZVrfElG1t0.png"/>
-            <p>ساعات ذكية</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_iZVrfElG1t0.png"/>
+                <p>ساعات ذكية</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_gz9njd0zYbQ.png"/>
-            <p>الكترونيات</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_gz9njd0zYbQ.png"/>
+                <p>الكترونيات</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_yFnX8DaC3UM.png"/>
-            <p>كاميرات</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_yFnX8DaC3UM.png"/>
+                <p>كاميرات</p>
+            </a>
         </div>
         <div class="col-lg-1 col-md-2 col-sm-3 zoom-in">
-            <img src="./images/categories/unsplash_xsGxhtAsfSA.png"/>
-            <p>موبايلات</p>
+            <a href="#">
+                <img src="./images/categories/unsplash_xsGxhtAsfSA.png"/>
+                <p>موبايلات</p>
+            </a>
         </div>
     </div>
 
@@ -181,7 +213,11 @@
                 <img src="./images/sales/Rectangle 726.png"/>
                 <div class="text">
                     <p>إشترى واحد واحصلى على الاخر مجانا</p>
-                    <span>ادوات تجميل</span>
+                    <span>
+                        <a href="#">
+                        ادوات تجميل
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -190,7 +226,11 @@
                 <img src="./images/sales/Rectangle 728.png"/>
                 <div class="text">
                     <p>تمتع بخصم 60% عند شرائك اكتر من منتج</p>
-                    <span>الاحذية</span>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -199,7 +239,11 @@
                 <img src="./images/sales/Rectangle 726.png"/>
                 <div class="text">
                     <p>إشترى واحد واحصلى على الاخر مجانا</p>
-                    <span>ادوات تجميل</span>
+                    <span>
+                        <a href="#">
+                        ادوات تجميل
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -208,7 +252,11 @@
                 <img src="./images/sales/Rectangle 728.png"/>
                 <div class="text">
                     <p>تمتع بخصم 60% عند شرائك اكتر من منتج</p>
-                    <span>الاحذية</span>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -264,7 +312,7 @@
 
     <div class="today-sales">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>عروض 
                 <span>اليوم</span>
             </p>
@@ -446,86 +494,96 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div  class="zoom-in">
-                    <img src="./images/sales-24h/Rectangle 736.png"/>
-                    <div>
-                        <p>
-                            عروض الالكترونيات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            60
-                        </span>
+                <a href="#">
+                    <div  class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sales-24h/Rectangle 736.png"/>
-                    <div>
-                        <p>
-                            عروض الالكترونيات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            60
-                        </span>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sales-24h/Rectangle 736.png"/>
-                    <div>
-                        <p>
-                            عروض الالكترونيات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            60
-                        </span>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sales-24h/Rectangle 736.png"/>
-                    <div>
-                        <p>
-                            عروض الالكترونيات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            60
-                        </span>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sales-24h/Rectangle 736.png"/>
-                    <div>
-                        <p>
-                            عروض الالكترونيات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            60
-                        </span>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sales-24h/Rectangle 736.png"/>
+                        <div>
+                            <p>
+                                عروض الالكترونيات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                60
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>عروض 
                 <span>الالكترونيات</span>
             </p>
@@ -782,51 +840,61 @@
 
     <div class="ramadan-sales">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="blue-btn">تسوق الان</a>
             <p>منتجات شهر 
                 <span>رمضان</span>
             </p>
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/ramadan-sales/Vector 27.png"/>
-                    <p>
-                        سكتشرز
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            سكتشرز
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/ramadan-sales/Vector 27.png"/>
-                    <p>
-                        روتين وتجميل
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            روتين وتجميل
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/ramadan-sales/Vector 27.png"/>
-                    <p>
-                        ألعاب وترفيه
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            ألعاب وترفيه
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/ramadan-sales/Vector 27.png"/>
-                    <p>
-                        عبادة وروحانيات
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            عبادة وروحانيات
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/ramadan-sales/Vector 27.png"/>
-                    <p>
-                        الإفطار والسحور 
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/ramadan-sales/Vector 27.png"/>
+                        <p>
+                            الإفطار والسحور 
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -839,7 +907,11 @@
                     <p>
                         الشحن مجانى على منتجات بأكتر من 300 ريال
                     </p>
-                    <span>الاحذية</span>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -850,7 +922,11 @@
                     <p>
                         اشترى واحد تحصلى على الاخر مجانا
                     </p>
-                    <span>ادوات تجميل</span>
+                    <span>
+                        <a href="#">
+                            ادوات تجميل
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -861,7 +937,11 @@
                     <p>
                         خصم 20% عند الاشتراك فى القائمة البريدية
                     </p>
-                    <span>المنزل وادوات البيت</span>
+                    <span>
+                        <a href="#">
+                            المنزل وادوات البيت
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -876,43 +956,51 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-out">
-                    <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
-                    <p>
-                        أزياء نسائية
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
+                        <p>
+                            أزياء نسائية
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-out">
-                    <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس رياضية
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس رياضية
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-out">
-                    <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
-                    <p>
-                        أزياء رمضان
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
+                        <p>
+                            أزياء رمضان
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-out">
-                    <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
-                    <p>
-                        أدوات تجميل
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
+                        <p>
+                            أدوات تجميل
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 ازياء نسائية
             </p>
@@ -1169,7 +1257,7 @@
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>شاهدى كل العروض</a>
+            <a href="#" class="red-btn">شاهدى كل العروض</a>
             <p>
                 خصم
                 <span>40 %</span>
@@ -1180,51 +1268,61 @@
     <div class="ramadan-sales sale40">
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes red-section">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="white-btn">تسوق الان</a>
             <p>
                 %
                 تخفيضات حتى
@@ -1240,94 +1338,112 @@
     <div class="ramadan-sales sale40 red-section">
         <div class="row">
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div>
+                <a href="#">
                     <div>
-                        <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        <div>
+                            <img src="./images/red-section/unsplash_Hd4nlxLgIbA.png"/>
+                        </div>
+                        <p>
+                            ملابس
+                        </p>
                     </div>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                </a>
             </div>
         </div>
     </div>
@@ -1341,43 +1457,51 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-in">
-                    <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
-                    <p>
-                        أزياء رجالية
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_5gkYsrH_ebY.png"/>
+                        <p>
+                            أزياء رجالية
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-in">
-                    <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس رياضية
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس رياضية
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-in">
-                    <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
-                    <p>
-                        أزياء رمضان
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_gUPiTDBdRe4.png"/>
+                        <p>
+                            أزياء رمضان
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col-lg-3 col-md-4 col-sm-6 col">
-                <div class="zoom-in">
-                    <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
-                    <p>
-                        سنيكرز
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/women-sales/unsplash_xXJ6utyoSw0.png"/>
+                        <p>
+                            سنيكرز
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 ازياء رجالية
             </p>
@@ -1634,7 +1758,7 @@
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>شاهد كل العروض</a>
+            <a href="#" class="red-btn">شاهد كل العروض</a>
             <p>
                 خصم
                 <span>40 %</span>
@@ -1645,51 +1769,61 @@
     <div class="ramadan-sales sale40">
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-in">
-                    <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
-                    <p>
-                        ملابس
-                    </p>
-                </div>
+                <a href="#">
+                    <div class="zoom-in">
+                        <img src="./images/sale40/unsplash_7cERndkOyDw.png"/>
+                        <p>
+                            ملابس
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="sales-24h house-sales">
         <div class="headers">
-            <a>شاهد كل العروض</a>
+            <a href="#" class="blue-btn">شاهد كل العروض</a>
             <div class="title">
                 <img src="./images/countdown/moon.svg">
                 <p>
@@ -1699,86 +1833,96 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
-                    <div>
-                        <p>
-                            نضافة و ادوات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            20
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
-                    <div>
-                        <p>
-                            نضافة و ادوات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            20
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
-                    <div>
-                        <p>
-                            نضافة و ادوات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            20
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
-                    <div>
-                        <p>
-                            نضافة و ادوات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            20
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
-                    <div>
-                        <p>
-                            نضافة و ادوات
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            20
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/house-sales/ar_mb-grocery-07 1.png"/>
+                        <div>
+                            <p>
+                                نضافة و ادوات
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                20
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض البيت و المطبخ
             </p>
@@ -2035,7 +2179,7 @@
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض الأجهزة المنزلية
             </p>
@@ -2298,7 +2442,11 @@
                     <p>
                         الشحن مجانى على منتجات بأكتر من 300 ريال
                     </p>
-                    <span>الاحذية</span>
+                    <span>
+                        <a href="#">
+                            الاحذية
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -2309,7 +2457,11 @@
                     <p>
                         اشترى واحد تحصلى على الاخر مجانا
                     </p>
-                    <span>ادوات تجميل</span>
+                    <span>
+                        <a href="#">
+                            ادوات تجميل
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -2320,7 +2472,11 @@
                     <p>
                         خصم 20% عند الاشتراك فى القائمة البريدية
                     </p>
-                    <span>المنزل وادوات البيت</span>
+                    <span>
+                        <a href="#">
+                            المنزل وادوات البيت
+                        </a>
+                    </span>
                 </div>
             </div>
         </div>
@@ -2328,7 +2484,7 @@
 
     <div class="sales-24h house-sales electronics">
         <div class="headers">
-            <a>شاهد كل العروض</a>
+            <a href="#" class="red-btn">شاهد كل العروض</a>
             <div class="title">
                 <img src="./images/countdown/moon.svg">
                 <p>
@@ -2338,86 +2494,96 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض
                 <span>الكمبيوتر</span>
@@ -2675,7 +2841,7 @@
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض
                 <span>الموبايل</span>
@@ -2937,7 +3103,7 @@
 
     <div class="sales-24h house-sales electronics">
         <div class="headers">
-            <a>شاهد كل العروض</a>
+            <a href="#" class="red-btn">شاهد كل العروض</a>
             <div class="title">
                 <img src="./images/countdown/moon.svg">
                 <p>
@@ -2947,86 +3113,96 @@
         </div>
         <div class="row">
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div data-aos="fade-right" class="col">
-                <div class="zoom-out">
-                    <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
-                    <div>
-                        <p>
-                            اكسسوارات الكمبيوتر
-                        </p>
-                        <span>
-                            %
-                            خصم حتى
-                            25
-                        </span>
+                <a href="#">
+                    <div class="zoom-out">
+                        <img src="./images/electronics/unsplash_PDX_a_82obo.png"/>
+                        <div>
+                            <p>
+                                اكسسوارات الكمبيوتر
+                            </p>
+                            <span>
+                                %
+                                خصم حتى
+                                25
+                            </span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض
                 <span>العطور</span>
@@ -3284,7 +3460,7 @@
 
     <div class="electronics-sales women-clothes">
         <div class="headers">
-            <a>تسوق الان</a>
+            <a href="#" class="red-btn">تسوق الان</a>
             <p>
                 عروض
                 <span>ادوات التجميل</span>
@@ -3550,27 +3726,27 @@
         <div class="row">
             <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
-                    <img src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
+                    <img class="zoom-in" src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
                 </div>
             </div>
             <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
-                    <img src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
+                    <img class="zoom-in" src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
                 </div>
             </div>
             <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
-                    <img src="./images/brands/1280px-H&M-Logo 1.png"/>
+                    <img class="zoom-in" src="./images/brands/1280px-H&M-Logo 1.png"/>
                 </div>
             </div>
             <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
-                    <img src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
+                    <img class="zoom-in" src="./images/brands/png-transparent-adidas-adidas-text-photography-logo 2.png"/>
                 </div>
             </div>
             <div data-aos="fade-right" class="col-lg-2 col-md-4 col-sm-6 col">
                 <div>
-                    <img src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
+                    <img class="zoom-in" src="./images/brands/20190919000353!Essence_logo_in_black 1.png"/>
                 </div>
             </div>
         </div>
@@ -3579,21 +3755,21 @@
     <div class="footer-banner">
         <div class="row">
             <div data-aos="fade-right" class="col col-lg-2 col-md-6 col-sm-12">
-                <div>
+                <div class="scaleImg">
                     <img src="./images/footer/Phone.svg"/>
                     <p>عبر الهاتف</p>
                     <p>050000000</p>
                 </div>
             </div>
             <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
-                <div>
+                <div class="scaleImg">
                     <img src="./images/footer/Mail.svg"/>
                     <p>البريد الالكترونى</p>
                     <p>support@lavana.com</p>
                 </div>
             </div>
             <div data-aos="fade-right" class="col col-lg-3 col-md-6 col-sm-12">
-                <div>
+                <div class="scaleImg">
                     <img src="./images/footer/Smile.svg"/>
                     <p>مركز المساعدة</p>
                     <p>help.lavana.com</p>
@@ -3617,14 +3793,14 @@
             <div class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <p>تواصل معنا</p>
-                    <p>الرياض . المملكة العربية السعودية</p>
-                    <p>اتصل بنا الان
+                    <p class="toLeft">الرياض . المملكة العربية السعودية</p>
+                    <p class="toLeft">اتصل بنا الان
                         04700000
                     </p>
-                    <p>راسلنا الان
+                    <p class="toLeft">راسلنا الان
                         Support@Taswaq.com
                     </p>
-                    <p>فاكس
+                    <p class="toLeft">فاكس
                         : 23232
                     </p>
                 </div>
@@ -3632,38 +3808,86 @@
             <div class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <p>حسابى</p>
-                    <p>صفحتك الشخصية</p>
-                    <p>عربة التسوق</p>
-                    <p>تتبع طلبيتك</p>
-                    <p>اعدادات الدفع الالكترونى</p>
-                    <p>اسالة و اجوبة</p>
+                    <p class="toLeft">
+                        <a href="#">
+                            صفحتك الشخصية
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            عربة التسوق
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تتبع طلبيتك
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            اعدادات الدفع الالكترونى
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            اسالة و اجوبة
+                        </a>
+                    </p>
                 </div>
             </div>
             <div class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <p>من نحن</p>
-                    <p>تعرف علينا</p>
-                    <p>تواصل معنا</p>
-                    <p>الشروط و الاحكام</p>
-                    <p>سياسة الارجاع و التبديل</p>
-                    <p>معلومات الشحن و الارسال</p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تعرف علينا
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            تواصل معنا
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            الشروط و الاحكام
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            سياسة الارجاع و التبديل
+                        </a>
+                    </p>
+                    <p class="toLeft">
+                        <a href="#">
+                            معلومات الشحن و الارسال
+                        </a>
+                    </p>
                 </div>
             </div>
             <div class="col col-lg-3 col-md-6 col-sm-12">
                 <div class="text">
                     <img src="./images/nav/logo (1) 2.png"/>
-                    <p>
+                    <p class="toLeft">
                         افضل متجر عربى
                     </p>
-                    <p>
+                    <p class="toLeft">
                         نقدم افضل المنتجات باعلى جودة
                     </p>
                     <div class="icons">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-google"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-instagram"></i>
-                        <i class="fa fa-spotify"></i>
+                        
+                        <a href="#">
+                            <i style="--color:#f4c20d" class="fa fa-snapchat"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#00acee" class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#8a3ab9" class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i style="--color:#3b5998" class="fa fa-facebook"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -3677,14 +3901,45 @@
         صنع ب
         &hearts;	
         بواسطة
-        Monaya
+        Lavana
     </footer>
 
     <div class="help">
-        <img src="./images/help/Group 291.svg"/>
+        <a href="#">
+            <img src="./images/help/Group 291.svg"/>
+        </a>
+        <div>
+            <p>
+                كيف يمكننى مساعدتك ؟
+            </p>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/cart.svg"/>
+            عربة التسوق
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/bars.svg"/>
+            الاقسام
+        </a>
+        <a class="active" href="#">
+            <img src="./images/bottom-tabs/home.svg"/>
+            الرئيسية
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/account.svg"/>
+            حسابى
+        </a>
+        <a class="" href="#">
+            <img src="./images/bottom-tabs/sales.svg"/>
+            العروض
+        </a>
     </div>
 
 </body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/282bcf757e.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

@@ -155,6 +155,9 @@ nav .search img{
     justify-content: center;
     align-items: center;
 }
+.swiper-slide img{
+    width: 100%;
+}
 
 .categories{
     padding: 10px;
@@ -237,6 +240,10 @@ nav .search img{
 }
 .countdown .timer > div{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .countdown .timer > div p{
     background: #364B70;
@@ -691,6 +698,10 @@ nav .search img{
 .sales2 .col div{
     justify-content: space-between;
 }
+.sales2 .col img{
+    width: 100%;
+    height: auto;
+}
 .sales2 .col div .text{
     padding: 4px 6px;
 }
@@ -763,6 +774,9 @@ nav .search img{
     font-size: 25.2141px;
     line-height: 30px;
     color: #000000;
+}
+.sale40 .row .col div img{
+    width: 100%;
 }
 
 .red-section{
@@ -1300,4 +1314,16 @@ footer{
     height: 3px;
     background: #04AA6D;
     width: 0%;
+}
+
+.changeable-border{
+    width: 50% !important;
+    border-radius: 16px 0 0 16px;
+    -webkit-border-radius: 16px 0 0 16px;
+    -moz-border-radius: 16px 0 0 16px;
+    -ms-border-radius: 16px 0 0 16px;
+    -o-border-radius: 16px 0 0 16px;
+}
+.changeable-border2{
+    width: calc(25% - 12px) !important;
 }

@@ -462,7 +462,7 @@ nav .search img{
     padding: 10px;
 }
 @media screen and (max-width: 600px) {
-    .sales-24h .row .col {width: 50%;}
+    .sales-24h .row .col {width: 100%;}
 }
 @media screen and (min-width: 601px) {
     @media screen and (max-width: 1079px) {
@@ -783,7 +783,7 @@ nav .search img{
     margin: 20px auto 30px auto;
     text-align: right;
     font-size: 18px;
-    line-height: 16px;
+    line-height: 24px;
     color: #FFFFFF;
 }
 .red-section .row .col{
@@ -803,6 +803,14 @@ nav .search img{
 .red-section .row .col > a > div{
     border: none;
     box-shadow: none;
+    transition-duration: 0.2s;
+}
+.red-section .row .col > a > div:hover{
+    transform: scale(1.14);
+    -webkit-transform: scale(1.14);
+    -moz-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    -o-transform: scale(1.14);
 }
 .red-section .row .col > a > div > div{
     border: 2px dashed #fff;
@@ -921,6 +929,9 @@ nav .search img{
     background: rgba(185, 39, 40, 0.1);
     padding: 8px 58px 32px 58px;
 }
+.footer-contact .contact-icons{
+    margin: 0 0 0 6px;
+}
 .footer-contact .row{
     align-items: flex-start;
 }
@@ -934,12 +945,13 @@ nav .search img{
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    text-align: center;
 }
 .footer-contact .icons i{
     background-color: #fff;
     color: #212121;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -948,6 +960,8 @@ nav .search img{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    font-size: 18px;
+    margin: 4px 2px;
 }
 .footer-contact .icons i:hover{
     color: var(--color);
@@ -1002,7 +1016,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     opacity: 0;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .options span{
     height: 60px;
@@ -1011,6 +1025,16 @@ footer{
 }
 .row .col:hover .options{
     opacity: 1;
+}
+.options img{
+    transition-duration: 0.2s;
+}
+.options img:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
 }
 
 .help{
@@ -1022,7 +1046,7 @@ footer{
 }
 .help img{
     width: 100px;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .help img:hover{
     transform: scale(1.05);
@@ -1060,7 +1084,7 @@ footer{
     padding: 2px;
     width: fit-content;
     opacity: 0;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .help div p{
     font-size: 12px;
@@ -1076,6 +1100,13 @@ footer{
     padding: 4px 4px 4px 0;
     width: 144px;
 }
+.menu p, .menu div{
+    border-bottom: 2px solid #0002;
+}
+.menu p:hover{
+    color: #000;
+    font-weight: bold;
+}
 .menu > i{
     margin: 0 20px 0 4px;
 }
@@ -1083,8 +1114,10 @@ footer{
     display: none;
     position: absolute;
     top: 100%;
-    background-color: #fff;
+    background-color: #B92728;
+    color: #fff;
     z-index: 1;
+    font-weight: normal;
 }
 .menu:hover div:not(.subMenu, .subMenu2){
     display: block;
@@ -1105,7 +1138,8 @@ footer{
     position: absolute;
     top: 0%;
     right: 140px;
-    background-color: #fff;
+    background-color: #B92728;
+    color: #fff;
     z-index: 1;
 }
 .menu2:hover div:not(.subMenu2){
@@ -1127,7 +1161,8 @@ footer{
     position: absolute;
     top: 0%;
     right: 136px;
-    background-color: #fff;
+    background-color: #B92728;
+    color: #fff;
     z-index: 1;
 }
 .menu3:hover div{
@@ -1135,7 +1170,7 @@ footer{
 }
 
 .zoom-in, .zoom-out{
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .zoom-in:hover{
     transform: scale(1.05);
@@ -1174,7 +1209,7 @@ footer{
 }
 
 .scaleImg img{
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .scaleImg:hover img{
     transform: scale(1.4);
@@ -1185,7 +1220,10 @@ footer{
 }
 
 .toLeft{
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .toLeft:hover{
     transform: translateX(-20px);
@@ -1229,4 +1267,37 @@ footer{
 }
 .bottom-nav a:hover{
     opacity: 0.7;
+}
+
+.loginMenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.loginMenu a{
+    background-color: #fff;
+    width: 240px;
+    color: #000 !important;
+    padding: 4px;
+}
+.loginMenu a:hover{
+    background-color: #000 !important;
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.progress-container {
+    width: 100%;
+    height: 3px;
+    background: #e8e8e8;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.progress-bar {
+    height: 3px;
+    background: #04AA6D;
+    width: 0%;
 }

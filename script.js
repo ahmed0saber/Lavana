@@ -23,14 +23,23 @@ const check_screen = () =>{
     if(window.innerWidth >= 1226){
         for(let i = 0; i < nav_content.length; i++) {
             nav_content[i].style.display = "block"
+            document.getElementsByClassName("temp-mobile-nav")[0].style.display = "none"
         }
     }else if(window.innerWidth >= 701){
         if(!open){
             for(let i = 0; i < nav_content.length; i++) {
                 nav_content[i].style.display = "none"
             }
+            document.getElementsByClassName("temp-mobile-nav")[0].style.display = "none"
         }
     }else{
+        for(let i = 0; i < nav_content.length; i++) {
+            nav_content[i].style.display = "none"
+        }
+        document.getElementsByClassName("temp-mobile-nav")[0].style.display = "flex"
+        document.getElementsByClassName("dropdown")[0].style.display = "block"
+        document.getElementsByClassName("dropdown")[1].style.display = "block"
+        document.getElementsByClassName("dropdown")[2].style.display = "block"
         document.getElementsByClassName("search")[0].style.display = "block"
     }
 }
@@ -71,23 +80,31 @@ const updateTimer = () => {
 }
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
-
-    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
 })
+
+const showMenu = () => {
+    document.getElementsByClassName("loginMenu")[0].style.display = "block"
+}
+const hideMenu = () => {
+    document.getElementsByClassName("loginMenu")[0].style.display = "none"
+}
+
+window.onscroll = function() {myFunction()}
+function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    var scrolled = (winScroll / height) * 100
+    document.getElementById("myBar").style.width = scrolled + "%"
+}

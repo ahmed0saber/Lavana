@@ -16,6 +16,24 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body onresize="check_screen()">
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="temp-mobile-nav">
+        <select class="toggleable dropdown">
+            <option>عربى</option>
+            <option>En</option>
+        </select>
+        <div class="country">
+            <select class="toggleable dropdown">
+                <option>تسليم لـ جدة</option>
+                <option>En</option>
+            </select>
+            <img class="flag toggleable dropdown" src="./images/nav/SA.svg"/>
+        </div>
+    </div>
+
     <nav>
         <div class="badge-btns">
             <img class="badge-btn toggleable" src="./images/nav/Google Play Badge.svg"/>
@@ -58,11 +76,22 @@
                     <p>المفضلة</p>
                 </a>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="showMenu()" onmouseout="hideMenu()">
                 <a href="#">
                     <img src="./images/second-nav/user.svg"/>
                     <p>تسجيل الدخول</p>
                 </a>
+                <div class="loginMenu">
+                    <a href="#">
+                        A
+                    </a>
+                    <a href="#">
+                        B
+                    </a>
+                    <a href="#">
+                        C
+                    </a>
+                </div>
             </div>
         </div>
         <div class="tabs">
@@ -323,11 +352,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -364,11 +399,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -405,11 +446,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -446,11 +493,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -495,7 +548,7 @@
         <div class="row">
             <div data-aos="fade-right" class="col">
                 <a href="#">
-                    <div  class="zoom-in">
+                    <div class="zoom-in">
                         <img src="./images/sales-24h/Rectangle 736.png"/>
                         <div>
                             <p>
@@ -594,11 +647,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -635,11 +694,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -676,11 +741,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -717,11 +788,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -758,11 +835,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -799,11 +882,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1011,11 +1100,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1052,11 +1147,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1093,11 +1194,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1134,11 +1241,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1175,11 +1288,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1216,11 +1335,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1512,11 +1637,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1553,11 +1684,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1594,11 +1731,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1635,11 +1778,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1676,11 +1825,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1717,11 +1872,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1933,11 +2094,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -1974,11 +2141,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2015,11 +2188,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2056,11 +2235,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2097,11 +2282,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2138,11 +2329,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2190,11 +2387,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2231,11 +2434,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2272,11 +2481,17 @@
                 <img src="./images/today-sales/unsplash_-aMhLQwGd2g.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2313,11 +2528,17 @@
                 <img src="./images/today-sales/unsplash_wsCwj455vh0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2354,11 +2575,17 @@
                 <img src="./images/today-sales/unsplash_NoVnXXmDNi0.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2395,11 +2622,17 @@
                 <img src="./images/today-sales/unsplash_dwKiHoqqxk8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2595,11 +2828,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2636,11 +2875,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2677,11 +2922,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2718,11 +2969,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2759,11 +3016,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2800,11 +3063,17 @@
                 <img src="./images/computer/unsplash_bJjsKbToY34.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2853,11 +3122,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2894,11 +3169,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2935,11 +3216,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -2976,11 +3263,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3017,11 +3310,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3058,11 +3357,17 @@
                 <img src="./images/mobile/unsplash_T4erIQTGfZE.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3214,11 +3519,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3255,11 +3566,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3296,11 +3613,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3337,11 +3660,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3378,11 +3707,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3419,11 +3754,17 @@
                 <img src="./images/perfume/unsplash_d1GwyeOlZDw.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3472,11 +3813,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3513,11 +3860,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3554,11 +3907,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3595,11 +3954,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3636,11 +4001,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3677,11 +4048,17 @@
                 <img src="./images/tools/unsplash_PEttXYw9hi8.png"/>
                 <div>
                     <div class="options">
-                        <img src="./images/card-hover/remove_red_eye.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/remove_red_eye.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/Heart_01.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/Heart_01.svg"/>
+                        </a>
                         <span></span>
-                        <img src="./images/card-hover/shopping_cart.svg"/>
+                        <a href="#">
+                            <img src="./images/card-hover/shopping_cart.svg"/>
+                        </a>
                     </div>
                     <p>
                         حذاء نسائي للاناقة والراحة
@@ -3793,15 +4170,18 @@
             <div class="col col-lg-3 col-md-6 col-sm-12">
                 <div>
                     <p>تواصل معنا</p>
-                    <p class="toLeft">الرياض . المملكة العربية السعودية</p>
-                    <p class="toLeft">اتصل بنا الان
+                    <p class="toLeft">
+                        الرياض . المملكة العربية السعودية
+                        <img class="contact-icons" src="./images/contact-icons/mark.svg"/>
+                    </p>
+                    <p class="toLeft">اتصل بنا الان :
                         04700000
+                        <img class="contact-icons" src="./images/contact-icons/phone.svg"/>
                     </p>
-                    <p class="toLeft">راسلنا الان
-                        Support@Taswaq.com
-                    </p>
-                    <p class="toLeft">فاكس
-                        : 23232
+                    <p class="toLeft">
+                        Support@Taswaq.com :
+                        راسلنا الان
+                        <img class="contact-icons" src="./images/contact-icons/msg.svg"/>
                     </p>
                 </div>
             </div>

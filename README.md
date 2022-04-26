@@ -1,4 +1,4 @@
-### Lavana landing page (Not Responsive Yet)
+### Lavana landing page
 
 https://ahmed0saber.github.io/Lavana/
 
